@@ -6,7 +6,7 @@ const dotenv = require('dotenv').config();
 const employeeRoutes = require('./routes/employee');
 
 const app = express();
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use('/employee', employeeRoutes);
